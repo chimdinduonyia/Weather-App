@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>Weather App</title>
+</head>
+<body>
+    <h1>Weather App</h1>
+    <div class="wrapper">
+        <div class="form-wrapper card-shadow">
+            <span class="notification">Please Enter A City</span>
+            <input type="text" name="cityName" id="cityName" placeholder="📍 Enter a City" autocomplete="off">
+            <button type="submit" id="getWeatherBtn">Get Weather</button>
+        </div>
+        <div class="weather-card card-shadow">
+            <div id="cityDisplay">
+                <span id="city">--</span>, <span id="country">--</span>
+            </div>
+            <div id="weatherEmojiDisplay">
+                --
+            </div>
+            <div id="tempDisplay">
+                <span id="temperature">--</span> <span class="unit">°C</span>
+            </div>
+            <div id="remark">
+                -- --
+            </div>
+            <div class="weatherInfo">
+                <div id="wind">
+                    <div class="icon">
+                        <i class="fa-solid fa-wind"></i>
+                    </div>
+                    <div class="info">
+                        <span class="infoName">Wind Speed</span>
+                        <span><span class="infoValue windSpeedValue">--</span><span class="infoValueUnit">km/hr</span></span>
+                    </div>
+                </div>
+                <div id="humidity">
+                    <div class="icon">
+                        <i class="fa-solid fa-droplet"></i>
+                    </div>
+                    <div class="info">
+                        <span class="infoName">Humidity</span>
+                        <span><span class="infoValue humidityValue">--</span><span class="infoValueUnit">%</span></span>
+                    </div>
+                </div>
+                <!-- <div id="uvIndex">
+                    <div class="icon">
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+                    <div class="info">
+                        <span>UV Index</span>
+                        <span>Low</span>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/08864d9fb2.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
