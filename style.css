@@ -40,6 +40,7 @@ h1{
     position: relative;
 }
 
+
 .wrapper{
     display: flex;
     flex-direction: column;
@@ -126,7 +127,7 @@ h1{
 .info{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .infoName{
@@ -202,5 +203,34 @@ h1{
 
 #getWeatherBtn:hover{
     background-color: #b72e13;
+}
+
+@media screen and (max-width: 600px){
+
+    #cityName{
+        width: 160px;
+    }    
+
+    #weatherEmojiDisplay{
+        font-size: 60px;
+    }
+
+    #temperature{
+        font-size: 40px;
+    }
+
+    #remark{
+        font-size: 14px;
+    }
+    
+    .icon i{
+        font-size: 20px;
+    }
+
+    .infoValue{
+        font-size: 20px;
+    }
+    
+
 }
 
