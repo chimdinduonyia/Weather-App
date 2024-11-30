@@ -15,6 +15,19 @@ body{
 h1{
     font-size: 45px;
     color: blueviolet;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#credit{
+    color: #9c9c9c;
+    margin-top: 15px;
 }
 
 .form-wrapper{
