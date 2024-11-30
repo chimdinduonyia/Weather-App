@@ -85,7 +85,7 @@ async function fetchCityCoordinates(city){
 
     try{
 
-        const apiCoordinatesResponse = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${apiKey}`);
+        const apiCoordinatesResponse = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${apiKey}`);
 
         const apiCoordinates = await apiCoordinatesResponse.json();
 
