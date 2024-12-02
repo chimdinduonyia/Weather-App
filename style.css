@@ -31,7 +31,7 @@ h1{
 }
 
 .form-wrapper{
-    padding: 20px;
+    padding: 10px;
     display: flex;
     gap: 13px;
     border-radius: 7px;
@@ -148,16 +148,41 @@ h1{
     box-shadow: 0px 16px 32px 0 rgba(90, 90, 90, 0.1);
 }
 
+#location-icon{
+    position: relative;
+    padding-right: 10px;
+}
+
+#location-icon::after{
+    position: absolute;
+    content: "";
+    width: 1px;
+    background-color: #a0a0a06c;
+    height: 20px;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 #cityName{
     height: 30px;
     outline: none;
-    padding-left: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    margin-left: 10px;
+    /* border: 1px solid #ccc; */
+    /* border-radius: 3px; */
+    border: none;
+    border-bottom: 1px solid transparent;
+    font-size: 16px;
+    transition: 0.5s ease;
+    padding-bottom: 5px;
 }
 
+/* input#cityName:focus{
+    border-bottom: 1px solid blueviolet;
+} */
+
 .notification{
-    background-color: blueviolet;
+    background-color: #b72e13;
     color: #fff;
     font-size: 13px;
     font-weight: 400;
@@ -186,12 +211,13 @@ h1{
     transform: translateX(-50%);
     border-width: 5px;
     border-style: solid;
-    border-color: blueviolet transparent transparent transparent;
+    border-color: #b72e13 transparent transparent transparent;
 }
 
 #getWeatherBtn{
     border: none;
     padding: 10px 20px;
+    margin-left: 15px;
     background-color: blueviolet;
     color: #fff;
     border-radius: 3px;
@@ -208,7 +234,7 @@ h1{
 @media screen and (max-width: 600px){
 
     #cityName{
-        width: 170px;
+        width: 160px;
     }    
 
     #weatherEmojiDisplay{
@@ -231,6 +257,9 @@ h1{
         font-size: 20px;
     }
     
+    #getWeatherBtn{
+        margin-left: 5px;
+    }
 
 }
 

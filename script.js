@@ -1,5 +1,5 @@
 
-const cityNameInput = document.querySelector("#cityName");
+const cityNameInput = document.querySelector("input#cityName");
 const notification = document.querySelector(".notification");
 const getWeatherBtn = document.querySelector("#getWeatherBtn");
 const cityDisplay = document.querySelector("#city");
@@ -8,7 +8,7 @@ const tempDisplay = document.querySelector("#temperature");
 const descriptionDisplay = document.querySelector("#remark");
 const humidityValue = document.querySelector(".humidityValue");
 const windSpeedValue = document.querySelector(".windSpeedValue");
-const emojiDisplay = document.querySelector("#weatherEmojiDisplay")
+const emojiDisplay = document.querySelector("#weatherEmojiDisplay");
 
 const apiKey = "ffe438652c7faa9d913562b0f733d8de";
 
@@ -63,11 +63,14 @@ function getCityName(event){
 
     if(cityNameInput.value == ""){
 
+        cityNameInput.style = "border-bottom: 1px solid #b72e13";
+
         notification.textContent = "Please Enter A City";
         notification.classList.toggle("showNotification");
 
         setTimeout(() => {
             notification.classList.toggle("showNotification");
+            cityNameInput.style = "border-bottom: 1px solid transparent";
         }, 1500);
 
         return;
@@ -91,11 +94,13 @@ async function fetchCityCoordinates(city){
 
         if(apiCoordinates.length == 0){
 
+            cityNameInput.style = "border-bottom: 1px solid #b72e13";
             notification.textContent = "Please Enter A Valid City";
             notification.classList.toggle("showNotification");
             
             setTimeout(() => {
                 notification.classList.toggle("showNotification");
+                cityNameInput.style = "border-bottom: 1px solid transparent";
             }, 1500);
 
             return;

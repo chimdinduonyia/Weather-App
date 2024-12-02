@@ -15,9 +15,12 @@
     </div>
     <div class="wrapper">
         <div class="form-wrapper card-shadow">
-            <span class="notification">Please Enter A City</span>
-            <input type="text" name="cityName" id="cityName" placeholder="📍 Enter a City" autocomplete="off">
-            <button type="submit" id="getWeatherBtn">Get Weather</button>
+            <div class="search-bar">
+                <span class="notification">Please Enter A City</span>
+                <span id="location-icon">📍</span>
+                <input type="text" name="cityName" id="cityName" placeholder="Enter a City" autocomplete="off">
+                <button type="submit" id="getWeatherBtn">Get Weather</button>
+            </div>
         </div>
         <div class="weather-card card-shadow">
             <div id="cityDisplay">
