@@ -204,7 +204,7 @@ function renderWeatherEmoji(weatherId){
             return "❄️";
             break;
         case(weatherId >= 701 && weatherId <= 781):
-            return "🌪️";
+            return "🌫️";
             break;
         case(weatherId == 800):
             return "⛅";
